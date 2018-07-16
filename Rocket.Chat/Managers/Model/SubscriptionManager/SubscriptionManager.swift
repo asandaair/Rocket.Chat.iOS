@@ -28,8 +28,8 @@ struct SubscriptionManager {
         realm?.refresh()
 
         let client = API.current(realm: realm)?.client(SubscriptionsClient.self)
-        let lastUpdateSubscriptions = auth.lastSubscriptionFetchWithLastMessage?.addingTimeInterval(-100000)
-        let lastUpdateRooms = auth.lastRoomFetchWithLastMessage?.addingTimeInterval(-100000)
+        let lastUpdateSubscriptions = auth.lastSubscriptionFetchWithLastMessage
+        let lastUpdateRooms = auth.lastRoomFetchWithLastMessage
 
         // The call needs to be nested because at the first time the user
         // opens the app we don't have the Subscriptions and the Room object
