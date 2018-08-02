@@ -12,7 +12,7 @@ import semver
 
 final class ConnectServerViewController: BaseViewController {
 
-    internal let defaultURL = "https://open.rocket.chat"
+    internal let defaultURL = "https://myasanda.com"
     internal var connecting = false
     internal let infoRequestHandler = InfoRequestHandler()
     internal let buttonConnectBottomSpacing: CGFloat = 24
